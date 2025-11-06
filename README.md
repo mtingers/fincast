@@ -9,3 +9,6 @@ pip install -r requirements.txt
 ```bash
 python fincast.py example_config.yml
 ```
+# todo
+- pyproject.toml
+- uv build
