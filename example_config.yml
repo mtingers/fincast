@@ -1,0 +1,77 @@
+# initialize the start/stop date range and your balance (e.g. what is in your checking account)
+global:
+  start_date: 2025-10-25
+  # 2 year projection
+  end_date: 2027-10-25
+  balance: 10000.00
+  outfile: example_budget.csv
+
+# define each unique income and the interval, amount, etc
+income:
+  paycheck1:
+    amount: 1000.00 
+    interval: biweekly
+paycheck2:
+    amount: 300.00
+    interval: monthly 
+    day: 1
+
+# define each unique expense and the interval, amount, etc
+expenses:
+  rent:
+    amount: 500.00
+    interval: monthly
+    day: 1
+  car_payment:
+    amount: 300.0 
+    interval: monthly
+    day: 6
+  credit_card1:
+    amount: 50.00 
+    interval: monthly
+    day: 8
+    remaining_balance: 300.00
+  electric:
+    amount: 50.00 
+    interval: monthly
+    day: 8
+
+  ## weekly ##
+  car_gas:
+    amount: 20.00
+    interval: weekly
+    day_of_week: 1
+  groceries:
+    amount: 100.00
+    interval: weekly
+    day_of_week: 1
+  takeout:
+    amount: 100.00
+    interval: weekly
+    day_of_week: 3
+
+  ## yearly ##
+  amazon_prime_annual:
+    amount: 160.00
+    interval: yearly
+    month: 11
+    day: 1
+  car_registration:
+    amount: 200.00
+    interval: yearly
+    month: 12
+    day: 1
+
+  ## onetime ##
+  birthday_party:
+    amount: 250.00
+    interval: once 
+    year: 2025
+    month: 12
+    day: 1
+
+  ## misc ##
+  misc_monthly:
+    amount: 100.00
+    interval: monthly
+    day: 1
